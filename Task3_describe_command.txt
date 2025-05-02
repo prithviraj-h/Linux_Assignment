@@ -1,0 +1,12 @@
+1.Create the Script:
+  Create a script file named describe with the following content:
+  sudo nano /usr/local/bin/describe
+
+2.Make the Script Executable:
+  Set executable permissions:
+  sudo chmod +x /usr/local/bin/describe
+
+3.Usage:
+  Now, from any location in the terminal, users can simply type:
+  describe
+
