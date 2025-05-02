@@ -1,0 +1,8 @@
+1.Create the User:
+  Use the adduser command to create a new user (e.g., testuser):
+  sudo adduser testuser
+
+2.Verify the User's Group Memberships:
+  Check that the user is not a member of the sudo group:
+  groups testuser
+
