@@ -1,0 +1,20 @@
+6. Create a showtime Service to Log Time Every Minute
+Objective:
+Create a service that logs the current time every minute into a file in the user's home
+directory.
+Steps:
+1. Create the time logging script.
+2. Create the systemd service file.
+3. Create the systemd timer file.
+4. Reload systemd and enable the timer.
+5. Check status and logs.
+6. Stop the service.
+Commands:
+nano /usr/local/bin/showtime.sh
+sudo chmod +x /usr/local/bin/showtime.sh
+sudo nano /etc/systemd/system/showtime.service
+sudo systemctl daemon-reexec
+sudo systemctl daemon-reload
+sudo service showtime start
+cat showtime.log
+sudo service showtime stop
