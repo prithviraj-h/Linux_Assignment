@@ -1,0 +1,8 @@
+1.Set a Restrictive umask Value:
+  Edit the user's .bashrc file:
+  nano /home/username/.bashrc
+
+2.Apply the Changes:
+  After saving the file, apply the updated settings:
+  source ~/.bashrc
+

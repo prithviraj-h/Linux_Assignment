@@ -1,0 +1,12 @@
+1.Create a Sample File:
+  touch research
+  
+2.Compress the File:
+  Using gzip as an example:
+  gzip research
+
+3.Find and Decompress the File:
+  Locate the file anywhere in the filesystem and decompress it:
+  find / -name "research.*" 2>/dev/null
+  gunzip /path/to/research.gz
+

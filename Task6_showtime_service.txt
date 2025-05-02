@@ -1,0 +1,35 @@
+1.Create the Time Logging Script:
+  sudo nano /usr/local/bin/showtime.sh
+ 
+  Add the following content:
+  #!/bin/bash
+  echo "$(date)" >> /home/username/showtime.log
+  
+  Replace username with your actual Linux username.
+  Make the script executable:
+  sudo chmod +x /usr/local/bin/showtime.sh
+
+2.Create the systemd Service File:
+  sudo nano /etc/systemd/system/showtime.service
+
+3.Create the systemd Timer File:
+  sudo nano /etc/systemd/system/showtime.timer
+  
+4.Reload systemd and Enable the Timer:
+  sudo systemctl daemon-reexec
+  sudo systemctl daemon-reload
+  sudo systemctl enable --now showtime.timer
+  
+5.Check Status and Logs:
+  Check the status of the timer and service:
+  systemctl status showtime.timer
+  journalctl -u showtime.service
+
+  View the log output:
+  cat /home/username/showtime.log
+
+6.Stop the Service and Timer (if needed):
+  sudo systemctl stop showtime.timer
+  sudo systemctl stop showtime.service
+
+
