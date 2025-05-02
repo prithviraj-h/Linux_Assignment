@@ -1,0 +1,8 @@
+5. Restrict File Action After Creation (No chmod)
+Objective:
+Ensure that any newly created file is not accessible by default.
+Steps:
+Set umask 0777 in the user's .bashrc file.
+Commands:
+nano /home/username/.bashrc
+umask 0777
