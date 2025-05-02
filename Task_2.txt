@@ -1,0 +1,9 @@
+2. Create a User Without Sudo Access
+Objective:
+Create a user who is restricted from using sudo privileges.
+Steps:
+1. Add the user.
+2. Ensure the user is not part of the sudo group.
+Commands:
+sudo adduser testuser
+groups testuser
